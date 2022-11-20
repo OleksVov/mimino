@@ -1,9 +1,8 @@
 body {
    margin: 0;
-   background-color: $color-text-button;
+   background-color: #FFFDEE;
    color: $color-text-primary;
-   font-family: 'Roboto', sans-serif;
-   letter-spacing: 0.03em;
+   font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -35,13 +34,13 @@ p {
    padding-right: 15px;
 
    @include mobile {
-      width: 480px;
+      width: 414px;
    }
    @include tablet {
-         width: 768px;
+         width: 1024px;
    }
    @include desktop {
-               width: 1200px;
+               width: 1280px;
    }
 }
 

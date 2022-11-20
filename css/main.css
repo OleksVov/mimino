@@ -262,10 +262,9 @@ summary {
 
 body {
   margin: 0;
-  background-color: #ffffff;
+  background-color: #FFFDEE;
   color: #757575;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -299,17 +298,17 @@ p {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 414px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 1024px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1280px;
   }
 }
 
@@ -624,7 +623,7 @@ p {
 
 .hero {
   padding: 118px 0;
-  background-color: #c4c4c4;
+  background-color: #FFFDEE;
   text-align: center;
 }
 @media screen and (min-width: 480px) {
