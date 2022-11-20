@@ -263,7 +263,7 @@ summary {
 body {
   margin: 0;
   background-color: #FFFDEE;
-  color: #757575;
+  color: #5F5F5F;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -313,16 +313,31 @@ p {
 }
 
 .button {
-  background-color: #2196f3;
-  color: #ffffff;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  color: #F3C653;
+  width: 236px;
+  padding: 14px 0;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.button--dark {
+  background-color: #000000;
+  border: 2px solid #FFFDEE;
+}
+
+.button-arrow {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -338,6 +353,12 @@ p {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
+}
+
+.picture {
+  display: block;
+  width: 244px;
+  margin-left: auto;
 }
 
 .page-header {
@@ -714,22 +735,46 @@ p {
   }
 }
 .section {
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
+.section--background {
+  background-color: #F0ECD6;
+}
+
 .section__title {
-  margin-bottom: 30px;
-  color: #212121;
-  font-size: 28px;
-  line-height: 1.178;
-  letter-spacing: 0.03em;
-  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 32px;
+  color: #000000;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
-@media screen and (min-width: 1200px) {
-  .section__title {
-    font-size: 36px;
-    line-height: 1.167;
-  }
+.section__title--lowercase {
+  text-transform: lowercase;
+}
+
+.section__text {
+  margin-bottom: 32px;
+  max-width: 258px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #5F5F5F;
+}
+
+.section__slogan {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #B4B4B4;
+}
+
+.slider {
+  display: flex;
+  gap: 32px;
 }
 
 @media screen and (min-width: 768px) {

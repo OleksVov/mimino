@@ -1,18 +1,46 @@
 .section {
-   padding-bottom: 60px;
-   padding-top: 60px;
+   padding-bottom: 32px;
+   padding-top: 32px;
+   &--background {
+      background-color: #F0ECD6;
+   }
+}
 
-   &__title {
-         margin-bottom: 30px;
-         color: $color-text-title;
-         font-size: 28px;
-         line-height: 1.178;
-         letter-spacing: 0.03em;
-         text-align: center;
-         
-         @include desktop {
-            font-size: 36px;
-            line-height: 1.167;
+   .section__title {
+         margin-bottom: 12px;
+         margin-top: 32px;
+         color: #000000;
+         font-size: 24px;
+         line-height: 1.167;
+         letter-spacing: 0.05em;
+         text-transform: uppercase;
+         &--lowercase {
+            text-transform: lowercase;
          }
+
+         
+         // @include desktop {
+         //    font-size: 36px;
+         //    line-height: 1.167;
+         // }
       }
+
+.section__text {
+   margin-bottom: 32px;
+   max-width: 258px;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.25;
+   letter-spacing: 0.02em;
+   color: #5F5F5F;
+}
+.section__slogan {
+   margin-bottom: 8px;
+   font-size: 20px;
+   line-height: 1.15;
+   color: #B4B4B4
+}
+.slider {
+   display: flex;
+   gap: 32px;
 }
