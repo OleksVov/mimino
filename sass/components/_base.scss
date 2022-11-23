@@ -1,6 +1,5 @@
 body {
    margin: 0;
-   background-color: #FFFDEE;
    color:#5F5F5F;
    font-family: 'Montserrat', sans-serif;
 }
@@ -44,34 +43,6 @@ p {
    }
 }
 
-.button {
-   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-   color: #F3C653;
-   width: 236px;
-   padding: 14px 0;
-   border: 2px solid #FFFFFF;
-   border-radius: 25px;
-   font-family: inherit;
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.25;
-   letter-spacing: 0.02em;
-   cursor: pointer;
-}
-.button--dark {
-   background-color: #000000;
-   border: 2px solid #FFFDEE;
-}
-
-.button-arrow {
-   display: flex;
-   background-color: transparent;
-   border: none;
-   align-items: center;
-   padding: 0;
-   cursor: pointer;
-}
-
 .visually-hidden {
    position: absolute;
    white-space: nowrap;
@@ -83,9 +54,4 @@ p {
    clip: rect(0 0 0 0);
    clip-path: inset(50%);
    margin: -1px;
-}
-.picture {
-   display: block;
-   width: 244px;
-   margin-left: auto;
 }
