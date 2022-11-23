@@ -569,6 +569,7 @@ p {
 
 .rooms {
   background-color: #FFFDEE;
+  overflow: hidden;
 }
 .rooms--background {
   background-color: #F0ECD6;
@@ -651,7 +652,7 @@ p {
   left: 115px;
 }
 
-.rooms__gallery {
+.gallery__img {
   width: 194px;
   background: #DADADA;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
