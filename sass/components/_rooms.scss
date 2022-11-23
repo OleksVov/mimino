@@ -19,6 +19,9 @@
    &--lowercase {
       text-transform: lowercase;
    }
+   &--right {
+      text-align: right;
+   }
 
 
    // @include desktop {
@@ -35,6 +38,9 @@
    line-height: 1.25;
    letter-spacing: 0.02em;
    color: #5F5F5F;
+   &--right {
+      margin-left: auto;
+   }
 }
 
 .rooms__slogan {
@@ -42,27 +48,62 @@
    font-family: 'Times New Roman', serif;
    font-size: 20px;
    line-height: 1.15;
-   color: #B4B4B4
+   color: #B4B4B4;
+   &--right {
+      text-align: right;
+   }
 }
 
 .slider {
    display: flex;
    gap: 32px;
    margin-bottom: 20px;
+   &--right {
+      justify-content: right;
+   }
 }
 .rooms__picture {
    display: block;
    width: 244px;
-   margin-left: auto;
    margin-bottom: 32px;
+   background: #DADADA;
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
-
+   &--right {
+      margin-left: auto;
+   }
 }
+.gallery {
+  margin-bottom: 20px;
+}
+.gallery__list {
+   position: relative;
+   width: auto;
+   right: 115px;
+   display: flex;
+   gap: 16px;
+ 
+   &--right {
+      left: 115px;
+   }
+}
+
 .rooms__gallery {
-   display: block;
    width: 194px;
-   margin-bottom: 20px;
+   background: #DADADA;
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
+   // overflow: hidden;
+}
+
+
+.rooms__item:not(:last-child) {
+   margin-bottom: 16px;
+}
+.rooms__list {
+   text-align: center;
+}
+.rooms__logo--right {
+   display: block;
+   text-align: right;
 }

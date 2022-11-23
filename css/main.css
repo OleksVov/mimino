@@ -587,6 +587,9 @@ p {
 .rooms__title--lowercase {
   text-transform: lowercase;
 }
+.rooms__title--right {
+  text-align: right;
+}
 
 .rooms__text {
   margin-bottom: 32px;
@@ -597,6 +600,9 @@ p {
   letter-spacing: 0.02em;
   color: #5F5F5F;
 }
+.rooms__text--right {
+  margin-left: auto;
+}
 
 .rooms__slogan {
   margin-bottom: 8px;
@@ -605,28 +611,64 @@ p {
   line-height: 1.15;
   color: #B4B4B4;
 }
+.rooms__slogan--right {
+  text-align: right;
+}
 
 .slider {
   display: flex;
   gap: 32px;
   margin-bottom: 20px;
 }
+.slider--right {
+  justify-content: right;
+}
 
 .rooms__picture {
   display: block;
   width: 244px;
-  margin-left: auto;
   margin-bottom: 32px;
+  background: #DADADA;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+.rooms__picture--right {
+  margin-left: auto;
+}
+
+.gallery {
+  margin-bottom: 20px;
+}
+
+.gallery__list {
+  position: relative;
+  width: auto;
+  right: 115px;
+  display: flex;
+  gap: 16px;
+}
+.gallery__list--right {
+  left: 115px;
+}
+
+.rooms__gallery {
+  width: 194px;
+  background: #DADADA;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 
-.rooms__gallery {
+.rooms__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.rooms__list {
+  text-align: center;
+}
+
+.rooms__logo--right {
   display: block;
-  width: 194px;
-  margin-bottom: 20px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
+  text-align: right;
 }
 
 .social {
