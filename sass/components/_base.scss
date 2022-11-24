@@ -37,6 +37,8 @@ p {
    }
    @include tablet {
          width: 1024px;
+         padding-left: 47px;
+         padding-right: 47px;
    }
    @include desktop {
                width: 1280px;
