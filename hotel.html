@@ -97,10 +97,11 @@
                   type="image/jpeg"
                   media="(min-width:1280px)"
                 />
-                <img class="rooms__picture rooms__picture--right" src="./images/hotel-images/apartment-414-min.jpg" alt="фото апартаментів" />
+                <img class="rooms__picture" src="./images/hotel-images/apartment-414-min.jpg" alt="фото апартаментів" />
               </picture>
              <div class="rooms__box">
-               <div class="gallery">
+               <div class="gallery__box">
+                  <div class="gallery">
                <ul class="list gallery__list">
                <li class="gallery__item">
                   <picture>
@@ -144,12 +145,7 @@
                </li>
              </ul>
              </div>
-              <ul class="rooms__list list">
-               <li class="rooms__item"><button class="button button--dark" type="button" >Детальніше</button></li>
-               <li class="rooms__item"><button class="button button--dark" type="button" >Переглянути ціни</button></li>
-              </ul>
-             </div>
-              <div class="slider">
+             <div class="slider">
                <button class="button-arrow">
                   <svg width="32px" height="32px">
                      <use href="./images/icon.svg#arrow-left"></use>
@@ -161,15 +157,23 @@
                   </svg>
                </button>
               </div>
+               </div>
+              <ul class="rooms__list list">
+               <li class="rooms__item"><button class="button button--dark" type="button" >Детальніше</button></li>
+               <li class="rooms__item"><button class="button button--dark" type="button" >Переглянути ціни</button></li>
+              </ul>
+             </div>
          </div>
       </section>
       <!-- Трьохмісний номер -->
-       <section class="section rooms rooms--background">
+       <section class="section rooms-family">
          <div class="container">
-            <p class="rooms__slogan rooms__slogan--right">Amet minim mollit non</p>
-            <a class="rooms__logo rooms__logo--right" href="./hotel.html">Mimino</a>
-            <h2 class="rooms__title rooms__title--right">Трьохмісний номер</h2>
-            <p class="rooms__text rooms__text--right">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <p class="rooms-family__slogan">Amet minim mollit non</p>
+            <a class="rooms-family__logo" href="./hotel.html">Mimino</a>
+            <div class="rooms-family__box-text">
+               <h2 class="rooms-family__title">Трьохмісний номер</h2>
+               <p class="rooms-family__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
             <picture>
                 <source
                   srcset="./images/hotel-images/apartment-414-min.jpg 1x, ./images/hotel-images/apartment-414@2x-min.jpg 2x"
@@ -186,9 +190,11 @@
                   type="image/jpeg"
                   media="(min-width:1280px)"
                 />
-                <img class="rooms__picture" src="./images/hotel-images/apartment-414-min.jpg" alt="фото апартаментів" />
+                <img class="rooms-family__picture" src="./images/hotel-images/apartment-414-min.jpg" alt="фото апартаментів" />
               </picture>
-              <div class="gallery">
+              <div class="rooms-family__box">
+               <div class="gallery-family__box">
+               <div class="gallery">
                <ul class="list gallery__list gallery__list--right">
                <li class="gallery__item">
                   <picture>
@@ -232,7 +238,7 @@
                </li>
              </ul>
              </div>
-               <div class="slider slider--right">
+               <div class="slider-family">
                <button class="button-arrow">
                   <svg width="32px" height="32px">
                      <use href="./images/icon.svg#arrow-left"></use>
@@ -244,10 +250,12 @@
                   </svg>
                </button>
               </div>
+              </div>
               <ul class="rooms__list list">
                <li class="rooms__item"><button class="button button--dark" type="button" >Детальніше</button></li>
                <li class="rooms__item"><button class="button button--dark" type="button" >Переглянути ціни</button></li>
               </ul>
+              </div>
          </div>
       </section>
       <!-- Двомісний номер -->
@@ -275,7 +283,9 @@
                 />
                 <img class="rooms__picture rooms__picture--right" src="./images/hotel-images/apartment-414-min.jpg" alt="фото апартаментів" />
               </picture>
-             <div class="gallery">
+             <div class="rooms__box">
+               <div class="gallery__box">
+                  <div class="gallery">
                <ul class="list gallery__list">
                <li class="gallery__item">
                   <picture>
@@ -319,7 +329,7 @@
                </li>
              </ul>
              </div>
-               <div class="slider">
+             <div class="slider">
                <button class="button-arrow">
                   <svg width="32px" height="32px">
                      <use href="./images/icon.svg#arrow-left"></use>
@@ -331,10 +341,12 @@
                   </svg>
                </button>
               </div>
+               </div>
               <ul class="rooms__list list">
                <li class="rooms__item"><button class="button button--dark" type="button" >Детальніше</button></li>
                <li class="rooms__item"><button class="button button--dark" type="button" >Переглянути ціни</button></li>
               </ul>
+             </div>
          </div>
       </section>
    </main>
