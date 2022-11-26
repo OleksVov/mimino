@@ -162,9 +162,7 @@
 
 
 .rooms__item:not(:last-child) {
-      @include tablet-down {
-            margin-bottom: 16px;
-         }
+   margin-bottom: 16px;
 }
 .rooms__list {
    text-align: center;
