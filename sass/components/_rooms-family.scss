@@ -1,5 +1,5 @@
 .rooms-family {
-   background-color: #F0ECD6;
+   background-color: $background-light-color;
    overflow: hidden;
 
    @include tablet {
@@ -39,7 +39,7 @@
 
 .rooms-family__box-text {
    display: block;
-   max-width: 320px;
+   max-width: 303px;
    margin-left: auto;
    text-align: start;
    @include tablet {

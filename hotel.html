@@ -1,392 +1,549 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Готель</title>
-   <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
-   <!-- Верхня лінія -->
-   <header class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Готель</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Верхня лінія -->
+    <header class="">
       <div class="container">
-         <nav class="">
-         <a class="" href="./hotel.html">Mimino</a>
-         <ul class="list">
+        <nav class="">
+          <a class="" href="./hotel.html">Mimino</a>
+          <ul class="list">
             <li>
-               <a href="">Ресторан</a>
+              <a href="">Ресторан</a>
             </li>
             <li>
-               <a href="tel:+380955559533">
-                  <svg width="24px" height="24px">
-                     <use href="./images/icon.svg#phone"></use>
-                  </svg>
-               </a>
+              <a href="tel:+380955559533">
+                <svg width="24px" height="24px">
+                  <use href="./images/icon.svg#phone"></use>
+                </svg>
+              </a>
             </li>
             <li>
-               <a href="hotel.html">Готель</a>
+              <a href="hotel.html">Готель</a>
             </li>
             <li>
-               <a href="tel:+380668491089">
-                  <svg width="24px" height="24px">
-                     <use href="./images/icon.svg#phone"></use>
-                  </svg>
-               </a>
+              <a href="tel:+380668491089">
+                <svg width="24px" height="24px">
+                  <use href="./images/icon.svg#phone"></use>
+                </svg>
+              </a>
             </li>
-         </ul>
-      </nav>
-      <address class="address">
-         <a class="address__link" href="https://goo.gl/maps/SgF8Lt622Wzfh8xf8"
-         target="_blank"
-         rel="noopener noreferrer nofollow">
-         <svg width="20px" height="20px">
-            <use href="./images/icon.svg#location"></use>
-         </svg>
-      Україна, м. Полтава, вул. Маршала Бірюзова, 15</a>
-      </address>
+          </ul>
+        </nav>
+        <address class="address">
+          <a
+            class="address__link"
+            href="https://goo.gl/maps/SgF8Lt622Wzfh8xf8"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <svg width="20px" height="20px">
+              <use href="./images/icon.svg#location"></use>
+            </svg>
+            Україна, м. Полтава, вул. Маршала Бірюзова, 15</a
+          >
+        </address>
       </div>
-   </header>
-   <main>
+    </header>
+    <main>
       <!-- Шапка -->
       <section class="hero">
-         <div class="container">
-            <h1 class="hero__title">Mimino</h1>
-            <p class="hero__subtitle">Готель</p>
-            <button class="button" type="button">Забронювати столик</button>
-            <button class="button" type="button">Забронювати номер</button>
-            <ul class="list">
-               <li><a href="#">
-                  <svg width="24px" height="24px">
-                     <use href="./images/icon.svg#instagram"></use>
-                  </svg>
-               </a></li>
-               <li><a href="#">
-                  <svg width="24px" height="24px">
-                     <use href="./images/icon.svg#facebook"></use>
-                  </svg>
-               </a></li>
-               <li><a href="#">
-                  <svg width="24px" height="24px">
-                     <use href="./images/icon.svg#telegram"></use>
-                  </svg>
-               </a></li>
-            </ul>
-         </div>
+        <div class="container">
+          <h1 class="hero__title">Mimino</h1>
+          <p class="hero__subtitle">Готель</p>
+          <button class="button" type="button">Забронювати столик</button>
+          <button class="button" type="button">Забронювати номер</button>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <svg width="24px" height="24px">
+                  <use href="./images/icon.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="24px" height="24px">
+                  <use href="./images/icon.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="24px" height="24px">
+                  <use href="./images/icon.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Двомісний номер люкс -->
       <section class="section rooms">
-         <div class="container">
-            <p class="rooms__slogan">Amet minim mollit non</p>
-            <a class="rooms__logo" href="./hotel.html">Mimino</a>
-            <h2 class="rooms__title">Двомісний номер <span class="rooms__title--lowercase">люкс</span></h2>
-            <p class="rooms__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <picture>
-                <source
-                  srcset="./images/hotel-images/apartment-414-min.jpg 1x, ./images/hotel-images/apartment-414@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="./images/hotel-images/apartment-1024-min.jpg 1x, ./images/hotel-images/apartment-1024@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="./images/hotel-images/apartment-1280-min.jpg 1x, ./images/hotel-images/apartment-1280@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img class="rooms__picture" src="./images/hotel-images/apartment-414-min.jpg" alt="фото апартаментів" />
-              </picture>
-             <div class="rooms__box">
-               <div class="gallery__box">
-                  <div class="gallery">
-               <ul class="list gallery__list">
-               <li class="gallery__item">
-                  <picture>
-               <source
-                  srcset="./images/hotel-images/bathroom-414-min.jpg 1x, ./images/hotel-images/bathroom-414@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="./images/hotel-images/bathroom-1024-min.jpg 1x, ./images/hotel-images/bathroom-1024@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="./images/hotel-images/bathroom-1280-min.jpg 1x, ./images/hotel-images/bathroom-1280@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img class="gallery__img" src="./images/hotel-images/bathroom-414-min.jpg" alt="фото умивальника у ванній кімнаті" />
-              </picture>
-               </li>
-               <li class="gallery__item">
-                   <picture>
-               <source
-                  srcset="./images/hotel-images/cup-tea-414-min.jpg 1x, ./images/hotel-images/cup-tea-414@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="./images/hotel-images/cup-tea-1024-min.jpg 1x, ./images/hotel-images/cup-tea-1024@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="./images/hotel-images/cup-tea-1280-min.jpg 1x, ./images/hotel-images/cup-tea-1280@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img class="gallery__img" src="./images/hotel-images/cup-tea-414-min.jpg" alt="чашка чаю на підвіконні" />
-              </picture>
-               </li>
-             </ul>
-             </div>
-             <div class="slider">
-               <button class="button-arrow">
-                  <svg width="32px" height="32px">
-                     <use href="./images/icon.svg#arrow-left"></use>
-                  </svg>
-               </button>
-               <button class="button-arrow">
-                  <svg width="32px" height="32px">
-                     <use href="./images/icon.svg#arrow-right"></use>
-                  </svg>
-               </button>
+        <div class="container">
+          <p class="rooms__slogan">Amet minim mollit non</p>
+          <a class="rooms__logo" href="./hotel.html">Mimino</a>
+          <h2 class="rooms__title">
+            Двомісний номер <span class="rooms__title--lowercase">люкс</span>
+          </h2>
+          <p class="rooms__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <picture>
+            <source
+              srcset="
+                ./images/hotel-images/apartment-414-min.jpg    1x,
+                ./images/hotel-images/apartment-414@2x-min.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width:1023px)"
+            />
+            <source
+              srcset="
+                ./images/hotel-images/apartment-1024-min.jpg    1x,
+                ./images/hotel-images/apartment-1024@2x-min.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width:1024px)"
+            />
+            <source
+              srcset="
+                ./images/hotel-images/apartment-1280-min.jpg    1x,
+                ./images/hotel-images/apartment-1280@2x-min.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width:1280px)"
+            />
+            <img
+              class="rooms__picture"
+              src="./images/hotel-images/apartment-414-min.jpg"
+              alt="фото апартаментів"
+            />
+          </picture>
+          <div class="rooms__box">
+            <div class="gallery__box">
+              <div class="gallery">
+                <ul class="list gallery__list">
+                  <li class="gallery__item">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/hotel-images/bathroom-414-min.jpg    1x,
+                          ./images/hotel-images/bathroom-414@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:1023px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/bathroom-1024-min.jpg    1x,
+                          ./images/hotel-images/bathroom-1024@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1024px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/bathroom-1280-min.jpg    1x,
+                          ./images/hotel-images/bathroom-1280@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1280px)"
+                      />
+                      <img
+                        class="gallery__img"
+                        src="./images/hotel-images/bathroom-414-min.jpg"
+                        alt="фото умивальника у ванній кімнаті"
+                      />
+                    </picture>
+                  </li>
+                  <li class="gallery__item">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/hotel-images/cup-tea-414-min.jpg    1x,
+                          ./images/hotel-images/cup-tea-414@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:1023px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/cup-tea-1024-min.jpg    1x,
+                          ./images/hotel-images/cup-tea-1024@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1024px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/cup-tea-1280-min.jpg    1x,
+                          ./images/hotel-images/cup-tea-1280@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1280px)"
+                      />
+                      <img
+                        class="gallery__img"
+                        src="./images/hotel-images/cup-tea-414-min.jpg"
+                        alt="чашка чаю на підвіконні"
+                      />
+                    </picture>
+                  </li>
+                </ul>
               </div>
-               </div>
-              <ul class="rooms__list list">
-               <li class="rooms__item"><button class="button button--dark" type="button" >Детальніше</button></li>
-               <li class="rooms__item"><button class="button button--dark" type="button" >Переглянути ціни</button></li>
-              </ul>
-             </div>
-         </div>
+              <div class="slider">
+                <button class="button-arrow">
+                  <svg width="32px" height="32px">
+                    <use href="./images/icon.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="button-arrow">
+                  <svg width="32px" height="32px">
+                    <use href="./images/icon.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <ul class="rooms__list list">
+              <li class="rooms__item">
+                <button class="button button--dark" type="button">Детальніше</button>
+              </li>
+              <li class="rooms__item">
+                <button class="button button--dark" type="button">Переглянути ціни</button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <!-- Трьохмісний номер -->
-       <section class="section rooms-family">
-         <div class="container">
-            <p class="rooms-family__slogan">Amet minim mollit non</p>
-            <a class="rooms-family__logo" href="./hotel.html">Mimino</a>
-            <div class="rooms-family__box-text">
-               <h2 class="rooms-family__title">Трьохмісний номер</h2>
-               <p class="rooms-family__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+      <section class="section rooms-family">
+        <div class="container">
+          <p class="rooms-family__slogan">Amet minim mollit non</p>
+          <a class="rooms-family__logo" href="./hotel.html">Mimino</a>
+          <div class="rooms-family__box-text">
+            <h2 class="rooms-family__title">Трьохмісний номер</h2>
+            <p class="rooms-family__text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+              amet.
+            </p>
+          </div>
+          <picture>
+            <source
+              srcset="
+                ./images/hotel-images/apartment-414-min.jpg    1x,
+                ./images/hotel-images/apartment-414@2x-min.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width:1023px)"
+            />
+            <source
+              srcset="
+                ./images/hotel-images/apartment-1024-min.jpg    1x,
+                ./images/hotel-images/apartment-1024@2x-min.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width:1024px)"
+            />
+            <source
+              srcset="
+                ./images/hotel-images/apartment-1280-min.jpg    1x,
+                ./images/hotel-images/apartment-1280@2x-min.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width:1280px)"
+            />
+            <img
+              class="rooms-family__picture"
+              src="./images/hotel-images/apartment-414-min.jpg"
+              alt="фото апартаментів"
+            />
+          </picture>
+          <div class="rooms-family__box">
+            <div class="gallery-family__box">
+              <div class="gallery">
+                <ul class="list gallery__list gallery__list--right">
+                  <li class="gallery__item">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/hotel-images/bathroom-414-min.jpg    1x,
+                          ./images/hotel-images/bathroom-414@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:1023px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/bathroom-1024-min.jpg    1x,
+                          ./images/hotel-images/bathroom-1024@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1024px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/bathroom-1280-min.jpg    1x,
+                          ./images/hotel-images/bathroom-1280@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1280px)"
+                      />
+                      <img
+                        class="gallery__img"
+                        src="./images/hotel-images/bathroom-414-min.jpg"
+                        alt="фото умивальника у ванній кімнаті"
+                      />
+                    </picture>
+                  </li>
+                  <li class="gallery__item">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/hotel-images/cup-tea-414-min.jpg    1x,
+                          ./images/hotel-images/cup-tea-414@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:1023px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/cup-tea-1024-min.jpg    1x,
+                          ./images/hotel-images/cup-tea-1024@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1024px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/cup-tea-1280-min.jpg    1x,
+                          ./images/hotel-images/cup-tea-1280@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1280px)"
+                      />
+                      <img
+                        class="gallery__img"
+                        src="./images/hotel-images/cup-tea-414-min.jpg"
+                        alt="чашка чаю на підвіконні"
+                      />
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+              <div class="slider-family">
+                <button class="button-arrow">
+                  <svg width="32px" height="32px">
+                    <use href="./images/icon.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="button-arrow">
+                  <svg width="32px" height="32px">
+                    <use href="./images/icon.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <picture>
-                <source
-                  srcset="./images/hotel-images/apartment-414-min.jpg 1x, ./images/hotel-images/apartment-414@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="./images/hotel-images/apartment-1024-min.jpg 1x, ./images/hotel-images/apartment-1024@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="./images/hotel-images/apartment-1280-min.jpg 1x, ./images/hotel-images/apartment-1280@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img class="rooms-family__picture" src="./images/hotel-images/apartment-414-min.jpg" alt="фото апартаментів" />
-              </picture>
-              <div class="rooms-family__box">
-               <div class="gallery-family__box">
-               <div class="gallery">
-               <ul class="list gallery__list gallery__list--right">
-               <li class="gallery__item">
-                  <picture>
-               <source
-                  srcset="./images/hotel-images/bathroom-414-min.jpg 1x, ./images/hotel-images/bathroom-414@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="./images/hotel-images/bathroom-1024-min.jpg 1x, ./images/hotel-images/bathroom-1024@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="./images/hotel-images/bathroom-1280-min.jpg 1x, ./images/hotel-images/bathroom-1280@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img class="gallery__img" src="./images/hotel-images/bathroom-414-min.jpg" alt="фото умивальника у ванній кімнаті" />
-              </picture>
-               </li>
-               <li class="gallery__item">
-                   <picture>
-               <source
-                  srcset="./images/hotel-images/cup-tea-414-min.jpg 1x, ./images/hotel-images/cup-tea-414@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="./images/hotel-images/cup-tea-1024-min.jpg 1x, ./images/hotel-images/cup-tea-1024@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="./images/hotel-images/cup-tea-1280-min.jpg 1x, ./images/hotel-images/cup-tea-1280@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img class="gallery__img" src="./images/hotel-images/cup-tea-414-min.jpg" alt="чашка чаю на підвіконні" />
-              </picture>
-               </li>
-             </ul>
-             </div>
-               <div class="slider-family">
-               <button class="button-arrow">
-                  <svg width="32px" height="32px">
-                     <use href="./images/icon.svg#arrow-left"></use>
-                  </svg>
-               </button>
-               <button class="button-arrow">
-                  <svg width="32px" height="32px">
-                     <use href="./images/icon.svg#arrow-right"></use>
-                  </svg>
-               </button>
-              </div>
-              </div>
-              <ul class="rooms__list list">
-               <li class="rooms__item"><button class="button button--dark" type="button" >Детальніше</button></li>
-               <li class="rooms__item"><button class="button button--dark" type="button" >Переглянути ціни</button></li>
-              </ul>
-              </div>
-         </div>
+            <ul class="rooms__list list">
+              <li class="rooms__item">
+                <button class="button button--dark" type="button">Детальніше</button>
+              </li>
+              <li class="rooms__item">
+                <button class="button button--dark" type="button">Переглянути ціни</button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <!-- Двомісний номер -->
-       <section class="section rooms">
-         <div class="container">
-            <p class="rooms__slogan">Amet minim mollit non</p>
-            <a class="rooms__logo" href="./hotel.html">Mimino</a>
-            <h2 class="rooms__title">Двомісний номер</h2>
-            <p class="rooms__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <picture>
-                <source
-                  srcset="./images/hotel-images/apartment-414-min.jpg 1x, ./images/hotel-images/apartment-414@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="./images/hotel-images/apartment-1024-min.jpg 1x, ./images/hotel-images/apartment-1024@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="./images/hotel-images/apartment-1280-min.jpg 1x, ./images/hotel-images/apartment-1280@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img class="rooms__picture rooms__picture--right" src="./images/hotel-images/apartment-414-min.jpg" alt="фото апартаментів" />
-              </picture>
-             <div class="rooms__box">
-               <div class="gallery__box">
-                  <div class="gallery">
-               <ul class="list gallery__list">
-               <li class="gallery__item">
-                  <picture>
-               <source
-                  srcset="./images/hotel-images/bathroom-414-min.jpg 1x, ./images/hotel-images/bathroom-414@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="./images/hotel-images/bathroom-1024-min.jpg 1x, ./images/hotel-images/bathroom-1024@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="./images/hotel-images/bathroom-1280-min.jpg 1x, ./images/hotel-images/bathroom-1280@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img class="gallery__img" src="./images/hotel-images/bathroom-414-min.jpg" alt="фото умивальника у ванній кімнаті" />
-              </picture>
-               </li>
-               <li class="gallery__item">
-                   <picture>
-               <source
-                  srcset="./images/hotel-images/cup-tea-414-min.jpg 1x, ./images/hotel-images/cup-tea-414@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="./images/hotel-images/cup-tea-1024-min.jpg 1x, ./images/hotel-images/cup-tea-1024@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="./images/hotel-images/cup-tea-1280-min.jpg 1x, ./images/hotel-images/cup-tea-1280@2x-min.jpg 2x"
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img class="gallery__img" src="./images/hotel-images/cup-tea-414-min.jpg" alt="чашка чаю на підвіконні" />
-              </picture>
-               </li>
-             </ul>
-             </div>
-             <div class="slider">
-               <button class="button-arrow">
-                  <svg width="32px" height="32px">
-                     <use href="./images/icon.svg#arrow-left"></use>
-                  </svg>
-               </button>
-               <button class="button-arrow">
-                  <svg width="32px" height="32px">
-                     <use href="./images/icon.svg#arrow-right"></use>
-                  </svg>
-               </button>
+      <section class="section rooms">
+        <div class="container">
+          <p class="rooms__slogan">Amet minim mollit non</p>
+          <a class="rooms__logo" href="./hotel.html">Mimino</a>
+          <h2 class="rooms__title">Двомісний номер</h2>
+          <p class="rooms__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <picture>
+            <source
+              srcset="
+                ./images/hotel-images/apartment-414-min.jpg    1x,
+                ./images/hotel-images/apartment-414@2x-min.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width:1023px)"
+            />
+            <source
+              srcset="
+                ./images/hotel-images/apartment-1024-min.jpg    1x,
+                ./images/hotel-images/apartment-1024@2x-min.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width:1024px)"
+            />
+            <source
+              srcset="
+                ./images/hotel-images/apartment-1280-min.jpg    1x,
+                ./images/hotel-images/apartment-1280@2x-min.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width:1280px)"
+            />
+            <img
+              class="rooms__picture rooms__picture--right"
+              src="./images/hotel-images/apartment-414-min.jpg"
+              alt="фото апартаментів"
+            />
+          </picture>
+          <div class="rooms__box">
+            <div class="gallery__box">
+              <div class="gallery">
+                <ul class="list gallery__list">
+                  <li class="gallery__item">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/hotel-images/bathroom-414-min.jpg    1x,
+                          ./images/hotel-images/bathroom-414@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:1023px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/bathroom-1024-min.jpg    1x,
+                          ./images/hotel-images/bathroom-1024@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1024px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/bathroom-1280-min.jpg    1x,
+                          ./images/hotel-images/bathroom-1280@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1280px)"
+                      />
+                      <img
+                        class="gallery__img"
+                        src="./images/hotel-images/bathroom-414-min.jpg"
+                        alt="фото умивальника у ванній кімнаті"
+                      />
+                    </picture>
+                  </li>
+                  <li class="gallery__item">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/hotel-images/cup-tea-414-min.jpg    1x,
+                          ./images/hotel-images/cup-tea-414@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:1023px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/cup-tea-1024-min.jpg    1x,
+                          ./images/hotel-images/cup-tea-1024@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1024px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel-images/cup-tea-1280-min.jpg    1x,
+                          ./images/hotel-images/cup-tea-1280@2x-min.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1280px)"
+                      />
+                      <img
+                        class="gallery__img"
+                        src="./images/hotel-images/cup-tea-414-min.jpg"
+                        alt="чашка чаю на підвіконні"
+                      />
+                    </picture>
+                  </li>
+                </ul>
               </div>
-               </div>
-              <ul class="rooms__list list">
-               <li class="rooms__item"><button class="button button--dark" type="button" >Детальніше</button></li>
-               <li class="rooms__item"><button class="button button--dark" type="button" >Переглянути ціни</button></li>
-              </ul>
-             </div>
-         </div>
-      </section>
-   </main>
-   <!-- Підвал -->
-   <footer>
-      <nav class="">
-         <a class="" href="./hotel.html">Mimino</a>
-         <ul class="list">
-            <li>
-               <a href="main.html">Головна</a>
-            </li>
-            <li>
-               <a href="">Ресторан</a>
-            </li>
-            <li>
-               <a href="hotel.html">Готель</a>
-            </li>
-         </ul>
-      </nav>
-       <ul class=" socials list">
-               <li><a href="#">
-                  <svg width="24px" height="24px">
-                     <use href="./images/icon.svg#instagram"></use>
+              <div class="slider">
+                <button class="button-arrow">
+                  <svg width="32px" height="32px">
+                    <use href="./images/icon.svg#arrow-left"></use>
                   </svg>
-               </a></li>
-               <li><a href="#">
-                  <svg width="24px" height="24px">
-                     <use href="./images/icon.svg#facebook"></use>
+                </button>
+                <button class="button-arrow">
+                  <svg width="32px" height="32px">
+                    <use href="./images/icon.svg#arrow-right"></use>
                   </svg>
-               </a></li>
-               <li><a href="#">
-                  <svg width="24px" height="24px">
-                     <use href="./images/icon.svg#telegram"></use>
-                  </svg>
-               </a></li>
+                </button>
+              </div>
+            </div>
+            <ul class="rooms__list list">
+              <li class="rooms__item">
+                <button class="button button--dark" type="button">Детальніше</button>
+              </li>
+              <li class="rooms__item">
+                <button class="button button--dark" type="button">Переглянути ціни</button>
+              </li>
             </ul>
-   </footer>
-   <!-- Модалка -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Підвал -->
+    <footer>
+      <nav class="">
+        <a class="" href="./hotel.html">Mimino</a>
+        <ul class="list">
+          <li>
+            <a href="main.html">Головна</a>
+          </li>
+          <li>
+            <a href="">Ресторан</a>
+          </li>
+          <li>
+            <a href="hotel.html">Готель</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="socials list">
+        <li>
+          <a href="#">
+            <svg width="24px" height="24px">
+              <use href="./images/icon.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="24px" height="24px">
+              <use href="./images/icon.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="24px" height="24px">
+              <use href="./images/icon.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Модалка -->
 
-   <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -394,5 +551,5 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
-</body>
+  </body>
 </html>

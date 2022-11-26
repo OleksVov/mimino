@@ -310,21 +310,9 @@ p {
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
 }
 
 .button {
@@ -366,6 +354,11 @@ p {
     padding-bottom: 40px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 72px;
+  }
+}
 
 .rooms {
   background-color: #FFFDEE;
@@ -380,7 +373,6 @@ p {
 
 .rooms__title {
   margin-bottom: 12px;
-  margin-top: 32px;
   color: #000000;
   font-family: "Times New Roman", serif;
   font-size: 24px;
@@ -392,6 +384,14 @@ p {
   .rooms__title {
     font-size: 30px;
     line-height: 1.133;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .rooms__title {
+    font-size: 36px;
+    line-height: 1.139;
+    margin-bottom: 24px;
   }
 }
 .rooms__title--lowercase {
@@ -400,6 +400,7 @@ p {
 
 .rooms__logo {
   display: block;
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.075;
@@ -411,6 +412,11 @@ p {
     font-size: 64px;
     line-height: 1.078;
     margin-bottom: 62px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .rooms__logo {
+    margin-bottom: 72px;
   }
 }
 
@@ -428,6 +434,12 @@ p {
     font-size: 16px;
     margin-bottom: 176px;
     max-width: 439px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .rooms__text {
+    margin-bottom: 188px;
+    max-width: 400px;
   }
 }
 
@@ -469,9 +481,25 @@ p {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1280px) {
+  .rooms__picture {
+    width: 460px;
+    right: 180px;
+  }
+}
 
 .gallery {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1280px) {
+  .gallery {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery {
+    margin-bottom: 40px;
+  }
 }
 
 .gallery__list {
@@ -494,6 +522,11 @@ p {
   background: #DADADA;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+}
+@media screen and (min-width: 1280px) {
+  .gallery__img {
+    width: 254px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -526,7 +559,7 @@ p {
 }
 
 .rooms-family {
-  background-color: #F0ECD6;
+  background-color: #FFFDEE;
   overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
@@ -569,7 +602,7 @@ p {
 
 .rooms-family__box-text {
   display: block;
-  max-width: 320px;
+  max-width: 303px;
   margin-left: auto;
   text-align: start;
 }

@@ -5,5 +5,8 @@
          padding-top: 62px;
          padding-bottom: 40px;
       }
+   @include desktop {
+      padding-top: 72px;
+   }
   
    }
