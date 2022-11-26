@@ -1,16 +1,17 @@
 .rooms-family {
-   background-color: $background-light-color;
+   background-color: $background-dark-color;
    overflow: hidden;
 
    @include tablet {
       position: relative;
       overflow: visible;
-   }
+     
+}
 }
 
 .rooms-family__title {
    margin-bottom: 12px;
-   color: #000000;
+   color: $main-dark-color;
    font-family: 'Times New Roman', serif;
    font-size: 24px;
    line-height: 1.167;
@@ -22,6 +23,11 @@
       font-size: 30px;
       line-height: 1.133;
    }
+   @include desktop {
+      font-size: 36px;
+      line-height: 1.139;
+      margin-bottom: 24px;
+}
 }
 .rooms-family__text {
    margin-bottom: 32px;
@@ -29,11 +35,13 @@
    font-size: 12px;
    line-height: 1.25;
    letter-spacing: 0.02em;
-   color: #5F5F5F;
+   color: $text-rest-homepage-color;
 
    @include tablet {
       font-size: 16px;
-   
+   }
+    @include desktop {
+      max-width: 400px;
    }
 }
 
@@ -46,6 +54,11 @@
          margin-bottom: 176px;
          max-width: 400px;
       }
+   @include desktop {
+      margin-bottom: 188px;
+      max-width: 454px;
+      margin-right: 57px;
+   }
 }
 
 .rooms-family__logo {
@@ -56,12 +69,17 @@
    font-size: 40px;
    line-height: 1.075;
    letter-spacing: 0.3em;
-   color: #494848;
+   color: $logo-rest-hotel-color;
+   text-decoration: none;
    @include tablet {
       font-size: 64px;
       line-height: 1.078;
       margin-bottom: 62px;
    }
+      @include desktop {
+         margin-bottom: 72px;
+         margin-right: 57px;
+      }
 }
 
 
@@ -71,13 +89,16 @@
    font-family: 'Times New Roman', serif;
    font-size: 20px;
    line-height: 1.15;
-   color: #B4B4B4;
+   color: $subtitles-color;
    text-align: right;
 
    @include tablet {
       margin-bottom: 4px;
       font-size: 32px;
       line-height: 1.156;
+   }
+   @include desktop {
+      margin-right: 57px;
    }
 }
 
@@ -87,14 +108,13 @@
    margin-bottom: 20px;
       justify-content: right;
 
-   @include tablet {}
 }
 
 .rooms-family__picture {
    display: block;
    width: 244px;
    margin-bottom: 32px;
-   background: #DADADA;
+   background: $background-img-color;
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
 
@@ -104,12 +124,22 @@
       left: 112px;
       width: 400px;
       margin-bottom: 0;
-
+   }
+   @include desktop {
+      left: 180px;
+      width: 460px;
    }
 }
 
 .gallery {
    margin-bottom: 20px;
+   @include desktop {
+         margin-bottom: 32px;
+      }
+   
+      @include desktop {
+         margin-bottom: 40px;
+      }
 }
 
 .gallery__list {
@@ -128,9 +158,12 @@
 
 .gallery__img {
    width: 194px;
-   background: #DADADA;
+   background: $background-img-color;
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
+   @include desktop {
+         width: 254px;
+      }
 
 }
 
@@ -144,7 +177,10 @@
 
 
 .rooms__item:not(:last-child) {
+   @include tablet-down {
    margin-bottom: 16px;
+   }
+
 }
 
 .rooms__list {
@@ -153,11 +189,6 @@
    @include tablet {
       margin-bottom: 105px;
    }
-}
-
-.rooms__logo--right {
-   display: block;
-   text-align: right;
 }
 
 .rooms-family__box {

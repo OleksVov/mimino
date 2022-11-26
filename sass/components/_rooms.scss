@@ -5,7 +5,23 @@
    @include tablet {
       position: relative;
       overflow: visible;
-      }
+      background-image: repeating-linear-gradient(
+         to right,
+         $background-light-color,
+         $background-light-color 255px,
+         $background-gradient 1px,
+         $background-gradient 256px
+      );
+   }
+   @include desktop {
+      background-image: repeating-linear-gradient(
+         to right,
+            $background-light-color,
+            $background-light-color 319px,
+            $background-gradient 1px,
+            $background-gradient 320px
+      );
+   }
 }
 
 .rooms__title {
@@ -31,24 +47,6 @@
       text-transform: lowercase;
    }
 }
-.rooms__logo {
-   display: block;
-   margin-bottom: 32px;
-   font-weight: 700;
-   font-size: 40px;
-   line-height: 1.075;
-   letter-spacing: 0.3em;
-   color: $logo-rest-hotel-color;
-   @include tablet {
-      font-size: 64px;
-      line-height: 1.078;
-      margin-bottom: 62px;
-   }
-   @include desktop {
-      margin-bottom: 72px;
-   }
-}
-
 .rooms__text {
    margin-bottom: 32px;
    max-width: 258px;
@@ -57,14 +55,34 @@
    line-height: 1.25;
    letter-spacing: 0.02em;
    color: $text-rest-homepage-color;
+
    @include tablet {
-         font-size: 16px;
-         margin-bottom: 176px;
-         max-width: 439px;
-      }
+      font-size: 16px;
+      margin-bottom: 176px;
+      max-width: 439px;
+   }
+
    @include desktop {
       margin-bottom: 188px;
       max-width: 400px;
+   }
+}
+.rooms__logo {
+   display: block;
+   margin-bottom: 32px;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 1.075;
+   letter-spacing: 0.3em;
+   color: $logo-rest-hotel-color;
+   text-decoration: none;
+   @include tablet {
+      font-size: 64px;
+      line-height: 1.078;
+      margin-bottom: 62px;
+   }
+   @include desktop {
+      margin-bottom: 72px;
    }
 }
 
@@ -86,10 +104,7 @@
    display: flex;
    gap: 32px;
    margin-bottom: 20px;
-  
-   @include tablet {
-   
-   }
+
 }
 .rooms__picture {
    display: block;
@@ -157,7 +172,9 @@
 
 
 .rooms__item:not(:last-child) {
-   margin-bottom: 16px;
+      @include tablet-down {
+            margin-bottom: 16px;
+         }
 }
 .rooms__list {
    text-align: center;
@@ -172,6 +189,4 @@
    justify-content: space-between;
    align-items: center;
    }
-
-
 }
