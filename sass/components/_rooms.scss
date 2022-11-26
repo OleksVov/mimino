@@ -8,19 +8,9 @@
       background-image: repeating-linear-gradient(
          to right,
          $background-light-color,
-         $background-light-color 255px,
-         $background-gradient 1px,
-         $background-gradient 256px
-      );
-   }
-   @include desktop {
-      background-image: repeating-linear-gradient(
-         to right,
-            $background-light-color,
-            $background-light-color 319px,
-            $background-gradient 1px,
-            $background-gradient 320px
-      );
+         $background-light-color 25%,
+         $background-gradient 0.1%,
+         $background-gradient 25.1%);
    }
 }
 

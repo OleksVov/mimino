@@ -5,7 +5,21 @@
    @include tablet {
       position: relative;
       overflow: visible;
-     
+     background-image: linear-gradient(
+      to right,
+      $background-dark-color 27%,
+      $background-gradient 27%,
+      $background-gradient 27.1%,
+      $background-dark-color 27.1%,
+      $background-dark-color 50%,
+      $background-gradient 50%,
+      $background-gradient 50.1%,
+      $background-dark-color 50.1%,
+      $background-dark-color 73%,
+      $background-gradient 73%,
+      $background-gradient 73.1%,
+      $background-dark-color 73.1%
+     );
 }
 }
 
