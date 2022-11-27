@@ -164,6 +164,7 @@
 .rooms__item:not(:last-child) {
    margin-bottom: 16px;
 }
+
 .rooms__list {
    text-align: center;
    @include tablet {

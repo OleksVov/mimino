@@ -1,9 +1,10 @@
 .button {
-   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-   color: #F3C653;
+   // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+   background-color: $buttons-light-color;
+   color: $accent-color;
    width: 236px;
    padding: 14px 0;
-   border: 2px solid #FFFFFF;
+   border: 2px solid $main-light-color;
    border-radius: 25px;
    font-family: inherit;
    font-weight: 700;
@@ -11,11 +12,25 @@
    line-height: 1.25;
    letter-spacing: 0.02em;
    cursor: pointer;
+   @include transition (background-color);
+   &:hover,
+   &:focus {
+            background-color: $main-light-color;
+         }
+   
 }
 
 .button--dark {
-   background-color: #000000;
-   border: 2px solid #FFFDEE;
+   background-color: $main-dark-color;
+   border: 2px solid $logo-header-room-color;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+         background-color: $main-light-color;
+         border-color: $accent-color;
+      }
+   
 }
 
 .button-arrow {
