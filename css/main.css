@@ -350,6 +350,7 @@ p {
   border: none;
   align-items: center;
   padding: 0;
+  fill: #000000;
   cursor: pointer;
 }
 

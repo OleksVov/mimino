@@ -1,5 +1,4 @@
 .button {
-   // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
    background-color: $buttons-light-color;
    color: $accent-color;
    width: 236px;
@@ -39,5 +38,6 @@
    border: none;
    align-items: center;
    padding: 0;
+   fill: $main-dark-color;
    cursor: pointer;
 }
