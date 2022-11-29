@@ -543,31 +543,45 @@
     </footer>
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button data-modal-close type="button" class="modal__btn"> 
+      <div class="modal-price">
+        <button data-modal-close type="button" class="modal-price__btn"> 
           <svg width="24" height="24">
           <use href=""></use>
         </svg>
       </button>
-      <h3 class="madal__title">Ціни на номер</h3>
-      <p class="modal__subtitle">Двомісний номер</p>
+      <h3 class="modal-price__title">Ціни на номер</h3>
       <form action="" class="cost" name="cost-form" autocomplete="on">
-        <ul>
-          <li><input
+        <ul class="list modal-price__list">
+          <li>
+            <input
              type="text"
-             class=""
-             name=""
-             id=""
-             placeholder="1"></li>
-          <li><input
-             type="text"
-             class=""
-             name=""
-             id=""
-             placeholder="1000"></li>
+             class="modal-price__input"
+             name="type"
+             id="type-room"
+             placeholder="Двомісний люкс">
+             <label for="type-room" class="modal-price__label">Категорія номеру</label>
+            </li>
+          <li>
+            <input
+             type="number"
+             class="modal-price__input"
+             name="quantity"
+             id="quantity-room"
+             placeholder="1">
+             <label for="quantity-room" class="modal-price__label">Кількість ночей</label>
+            </li>
+          <li>
+            <input
+             type="number"
+             class="modal-price__input"
+             name="price"
+             id="price-room"
+             placeholder="1000">
+             <label for="price-room" class="modal-price__label modal-price__label--lowercase">Грн</label>
+            </li>
         </ul>
+        <button class="modal-price__button">Забронювати номер</button>
       </form>
-
       </div>
     </div>
 

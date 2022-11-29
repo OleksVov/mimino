@@ -1,0 +1,63 @@
+.modal-price {
+   padding: 60px 15px;
+   text-align: center;
+
+}
+.modal-price__title {
+   margin-bottom: 40px;
+   font-family: 'Times New Roman',serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.167;
+      letter-spacing: 0.05em;
+      color: $main-dark-color;
+      text-transform: uppercase;
+}
+.modal-price__list {
+}
+.modal-price__input {
+   width: 384px;
+   height: 54px;
+   margin-bottom: 8px;
+   border: 1px solid $second-accent-color;
+   font-family: 'Times New Roman';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.167;
+      letter-spacing: 0.05em;
+      color: $modal-placeholder;
+}
+.modal-price__label {
+   margin-bottom: 20px;
+   font-weight: 500;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $second-accent-color;
+      &--lowercase {
+         text-transform: lowercase;
+      }
+}
+.modal-price__button {
+   background-color: $main-dark-color;
+      color: $main-light-color;
+      width: 384px;
+      padding: 20px 64px;
+      border: 1px solid $accent-color;
+      border-radius: 2px;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      cursor: pointer;
+      @include transition (background-color);
+   
+      &:hover,
+      &:focus {
+         background-color: $main-light-color;
+      }
+}
