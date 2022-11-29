@@ -796,7 +796,6 @@ p {
 
 .modal-price {
   padding: 60px 15px;
-  text-align: center;
 }
 
 .modal-price__title {
@@ -809,6 +808,18 @@ p {
   letter-spacing: 0.05em;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-price__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-price__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .modal-price__input {
@@ -823,10 +834,10 @@ p {
   line-height: 1.167;
   letter-spacing: 0.05em;
   color: #808080;
+  outline: none;
 }
 
 .modal-price__label {
-  margin-bottom: 20px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
