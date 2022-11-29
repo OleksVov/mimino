@@ -435,12 +435,14 @@ p {
 .rooms__logo {
   display: block;
   margin-bottom: 32px;
+  font-family: "Film P3";
   font-weight: 700;
   font-size: 40px;
   line-height: 1.075;
   letter-spacing: 0.3em;
   color: #494848;
   text-decoration: none;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1024px) {
   .rooms__logo {
