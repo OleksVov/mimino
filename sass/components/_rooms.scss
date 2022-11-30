@@ -1,10 +1,15 @@
+
 .rooms {
+   padding-bottom: 32px;
+      padding-top: 32px;
    background-color: $background-light-color;
    overflow: hidden;
 
    @include tablet {
       position: relative;
       overflow: visible;
+      padding-top: 62px;
+         padding-bottom: 40px;
       background-image: repeating-linear-gradient(
          to right,
          $background-light-color,
@@ -12,6 +17,9 @@
          $background-gradient 0.1%,
          $background-gradient 25.1%);
    }
+      @include desktop {
+         padding-top: 72px;
+      }
 }
 
 .rooms__title {
@@ -92,11 +100,17 @@
    }
 }
 
-.slider {
+.rooms__slider {
    display: flex;
    gap: 32px;
+   @include tablet-down {
    margin-bottom: 20px;
-
+   }
+   @include tablet {
+      position: absolute;
+      right: 502px;
+      top: 226px;
+   }
 }
 .rooms__picture {
    display: block;
@@ -118,18 +132,21 @@
          right: 180px;
       }
 }
-.gallery {
-  margin-bottom: 20px;
+.rooms-gallery {
+   @include tablet-down {
+   margin-bottom: 20px;
+   }
+  
 
-  @include desktop {
-   margin-bottom: 32px;
-  }
+//   @include tablet {
+//    margin-bottom: 104px;
+//   }
 
-  @include desktop {
-   margin-bottom: 40px;
-  }
+//   @include desktop {
+//    margin-bottom: 112px;
+//   }
 }
-.gallery__list {
+.rooms-gallery__list {
    position: relative;
    width: auto;
    right: 115px;
@@ -143,7 +160,7 @@
 
 }
 
-.gallery__img {
+.rooms-gallery__img {
    width: 194px;
    background: $background-img-color;
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -154,7 +171,7 @@
    }
    
 }
-.gallery__box {
+.rooms-gallery__box {
    @include tablet {
       display: flex;
       flex-direction: column;
@@ -169,13 +186,11 @@
 
 .rooms__list {
    text-align: center;
-   @include tablet {
-   margin-bottom: 105px;
-   }
    }
 
 .rooms__box {
    @include tablet {
+      position: relative;
    display: flex;
    justify-content: space-between;
    align-items: center;

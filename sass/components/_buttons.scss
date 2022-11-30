@@ -1,4 +1,4 @@
-.button {
+.rooms__button {
    background-color: $buttons-light-color;
    color: $accent-color;
    width: 236px;
@@ -11,7 +11,7 @@
    line-height: 1.25;
    letter-spacing: 0.02em;
    cursor: pointer;
-   @include transition (background-color);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    &:hover,
    &:focus {
             background-color: $main-light-color;
@@ -19,9 +19,19 @@
    
 }
 
-.button--dark {
+.rooms__button--dark {
    background-color: $main-dark-color;
+   color: $accent-color;
+      width: 236px;
+      padding: 14px 0;
    border: 2px solid $logo-header-room-color;
+   border-radius: 25px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      cursor: pointer;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    &:hover,
@@ -32,7 +42,7 @@
    
 }
 
-.button-arrow {
+.rooms__button-arrow {
    display: flex;
    background-color: transparent;
    border: none;
