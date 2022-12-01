@@ -3,11 +3,11 @@
    padding-bottom: 32px;
       padding-top: 32px;
    background-color: $background-light-color;
-   overflow: hidden;
+   // overflow: hidden;
 
    @include tablet {
       position: relative;
-      overflow: visible;
+      // overflow: visible;
       padding-top: 62px;
          padding-bottom: 40px;
       background-image: repeating-linear-gradient(
@@ -111,6 +111,11 @@
       right: 502px;
       top: 226px;
    }
+   @include desktop {
+      right: 555px;
+      top: 294px;
+
+   }
 }
 .rooms__picture {
    display: block;
@@ -129,6 +134,7 @@
       }
       @include desktop {
          width: 460px;
+         top: -105px;
          right: 180px;
       }
 }
@@ -194,5 +200,9 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   margin-bottom: 104px;
+   }
+   @include desktop {
+      margin-bottom: 112px;
    }
 }
