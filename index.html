@@ -542,7 +542,7 @@
       </ul>
     </footer>
     <!-- Модалка -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal-price>
       <div class="modal-price">
         <button data-modal-close type="button" class="modal-price__btn"> 
           <svg width="24" height="24">
@@ -554,6 +554,15 @@
       <p class="modal-price__text">Категорія номеру</p>
       <form action="" class="modal-price__form" name="cost-form" autocomplete="on">
         <ul class="list modal-price__list">
+          <li class="modal-price__item">
+            <select name="" id="" class="modal-price__input">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <label for="quantity-room" class="modal-price__label">Кількість ночей</label>
+
+          </li>
           <li class="modal-price__item">
             <input
              type="number"
