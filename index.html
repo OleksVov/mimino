@@ -214,7 +214,7 @@
             <!-- </div> -->
             <ul class="rooms__list list">
               <li class="rooms__item">
-                <button class="rooms__button--dark" type="button">Детальніше</button>
+                <button data-modal-room-open class="rooms__button--dark" type="button">Детальніше</button>
               </li>
               <li class="rooms__item">
                 <button data-modal-open class="rooms__button--dark" type="button">Переглянути ціни</button>
@@ -542,7 +542,7 @@
       </ul>
     </footer>
     <!-- Модалка -->
-    <div class="backdrop is-hidden" data-modal-price>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal-price">
         <button data-modal-close type="button" class="modal-price__btn"> 
           <svg width="24" height="24">
@@ -555,7 +555,52 @@
       <form action="" class="modal-price__form" name="cost-form" autocomplete="on">
         <ul class="list modal-price__list">
           <li class="modal-price__item">
-            <select name="" id="" class="modal-price__input">
+            <select name="quantity-room" id="quantity-room" class="modal-price__input">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <label for="quantity-room" class="modal-price__label">Кількість ночей</label>
+
+          </li>
+          <li class="modal-price__item">
+            <input
+             type="number"
+             class="modal-price__input"
+             name="quantity"
+             id="quantity-room"
+             placeholder="1">
+             <label for="quantity-room" class="modal-price__label">Кількість ночей</label>
+            </li>
+          <li class="modal-price__item">
+            <input
+             type="number"
+             class="modal-price__input"
+             name="price"
+             id="price-room"
+             placeholder="1000">
+             <label for="price-room" class="modal-price__label modal-price__label--lowercase">Грн</label>
+            </li>
+        </ul>
+        <button class="modal-price__button">Забронювати номер</button>
+      </form>
+      </div>
+    </div>
+    <!-- Модалка book room -->
+    <div class="backdrop is-hidden" data-modal-room>
+      <div class="modal-price">
+        <button data-modal-room-close type="button" class="modal-price__btn"> 
+          <svg width="24" height="24">
+          <use href="./images/icon.svg#close_24px"></use>
+        </svg>
+      </button>
+      <h3 class="modal-price__title">Замовити кімнату</h3>
+      <p class="modal-price__subtitle">Двомісний люкс</p>
+      <p class="modal-price__text">Категорія номеру</p>
+      <form action="" class="modal-price__form" name="cost-form" autocomplete="on">
+        <ul class="list modal-price__list">
+          <li class="modal-price__item">
+            <select name="quantity-room" id="quantity-room" class="modal-price__input">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -587,6 +632,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-room.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
