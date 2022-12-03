@@ -158,3 +158,17 @@
       border: none;
       cursor: pointer;
 }
+.modal-price__item--select {
+   position: relative;
+   
+
+}
+.select-icon {
+   position: absolute;
+   top: 20px;
+   // bottom: 0;
+   right: 5px;
+}
+select {
+   appearance: none;
+}

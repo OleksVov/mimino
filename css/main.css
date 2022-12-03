@@ -792,4 +792,20 @@ p {
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.modal-price__item--select {
+  position: relative;
+}
+
+.select-icon {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }/*# sourceMappingURL=main.css.map */
